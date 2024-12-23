@@ -124,7 +124,7 @@
             <h2>Live Data</h2>
             <p><b>Flex Sensor Value:</b> <span id="flexSensor">0.0</span></p>
             <p><b>Analog Sensor Value:</b> <span id="analogSensor">0.0</span></p>
-            <p><b>Soil Moisture:</b> <span id="soilMoisture">0.0</span> %</p>
+            
         </div>
 
         <!-- Alerts Card -->
@@ -213,7 +213,7 @@
                 // Update live data
                 document.getElementById('flexSensor').textContent = data.flexSensor.toFixed(2);
                 document.getElementById('analogSensor').textContent = data.analogSensor.toFixed(2);
-                document.getElementById('soilMoisture').textContent = data.soilMoisture.toFixed(2);
+                
                 
                 // Trigger alerts if necessary
                 if (data.flexSensor < 1000) {
